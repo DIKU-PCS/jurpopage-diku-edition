@@ -1,0 +1,405 @@
+html, body
+{ margin: 0; font-family: arial; background: #ffffff; }
+
+body, tbody { color: #000000; font-size: 11px;line-height: 1.4em;  }
+
+#small_date { font-family: arial; font-size: 80%; color: #023b71; font-weight: bold; }
+#small_date2 { font-family: verdana; font-size: 10px; color: #023b71; font-weight: normal; }
+
+#jdl-head { font-family: arial; font-size: 110%; font-weight: bold; color: #000000; border-top: solid #D20000 2px;  background: #f8f9fc; height: 24px; padding-left: 10px; }
+
+#jdl-kategori { font-family: arial; font-size: 90%; font-weight: normal; color: #000000; border-top: solid #D2D2D2 1px; border-bottom: solid #D2D2D2 1px;  background: #f8f9fc;}
+
+#navigasi { font-family: arial; font-size: 100%; font-weight: normal; color: #666666; border-bottom: solid #D2D2D2 1px;  }
+
+#jdl-news { font-family: arial; font-size: 120%; font-weight: bold; color: #023b71;}
+#jdl-newsfront { font-family: arial; font-size: 100%; font-weight: bold; color: #023b71;}
+
+#jdl-download { font-family: arial; font-size: 100%; font-weight: normal; color: #023b71; border-bottom: solid #D2D2D2 1px; text-align: justify;}
+#jdl-katnya { font-family: arial; font-size: 120%; font-weight: bold; color: #023b71; border-bottom: solid #D2D2D2 1px; text-align: justify;}
+
+#isi-download { font-family: arial; font-size: 90%; font-weight: normal; color: #023b71;}
+
+#ket-download { font-family: arial; font-size: 90%; font-weight: normal; color: #FF3300;}
+
+.jdl-newsdetail { font-family: arial; font-size: 150%; font-weight: bold; color: #000000;}
+
+.isi-newsdetail { font-family: arial; font-size: 120%; font-weight: normal; color: #000000;}
+
+#info { font-family: arial; font-size:100%; font-weight: bold; color: #023b71;}
+
+#tgl-newsdetail { font-family: arial; font-size: 80%; font-weight: normal; color: #fc5636; }
+
+#jdl-info { font-family: arial; font-size: 100%; font-weight: normal; color: #000000;}
+
+#files { font-family: arial; font-size: 80%; font-weight: normal; color: #000000;}
+
+.text { font-family: verdana; font-size: 90%; font-weight: bold ; color: #023b71; }
+
+a
+{
+	text-decoration: none;
+}
+
+form
+{
+	margin: 0; margin: 0;
+}
+
+.list ul
+{
+	margin: 0;
+	padding: 0;
+}
+.list li
+{
+	list-style: none;
+	background:  url(../imgs/bullet.gif) 1px 4px no-repeat;
+	padding-left: 11px;
+}
+.list2 ul
+{
+	margin: 0;
+	padding: 0;
+}
+.list2 li
+{
+	list-style: none;
+	background:  url(../imgs/bullet.gif) 1px 4px no-repeat;
+	padding-left: 11px;
+}
+.list li span
+{
+	font-weight: normal;
+    color: #4e80bb; 
+}
+
+.list li a
+{
+	display: block;
+	padding: 1px 2px;
+	color: #4e80bb;
+}
+.list li a:hover
+{
+	background: #d6ebfc;
+
+}
+.menu
+{
+margin: 0; padding: 0;
+width: 100%;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:10px
+}
+.menu ul
+{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.menu li
+{
+	display: block;
+	background: #C3C6D0;
+	border-bottom: 1px solid #fff;
+}
+.menu li a
+{
+	display: block;
+	background: #D3DDE9;
+	color: #023B71;
+	padding: 3px 2px;
+	margin-left: 5px;
+	text-decoration: none;
+	font-weight: bold;
+}
+.menu li a:hover
+{
+	background: #679;
+	color: #fff;
+}
+
+.searchbar
+{
+	background: #E5EDF6;
+	color: #FC9003;
+	padding: 7px 5px;
+	font-size: 1.1em;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+.lightblue_block
+{
+	background: #E5EDF6;
+	padding: 3px 5px;
+	margin: 2px 0px 5px;
+}
+
+a.submenu:link {
+	text-decoration: none;
+	color: #626262;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: normal;
+
+}
+a.submenu:visited {
+	color: #626262;
+	text-decoration: none;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: normal;
+}
+a.submenu:hover {
+	color: #FF0000;
+	text-decoration: none;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: normal;
+}
+
+a.submenu2:link {
+	text-decoration: none;
+	color: #ff4202;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+
+}
+a.submenu2:visited {
+	color: #ff4202;
+	text-decoration: none;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+}
+a.submenu2:hover {
+	color: #FF0000;
+	text-decoration: none;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+}
+
+a.submenu3:link {
+	text-decoration: none;
+	color: #626262;
+    font-family: Arial, Helvetica, sans-serif;
+	font-size: 100%;
+	font-weight: normal;
+
+}
+a.submenu3:visited {
+	color: #626262;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 100%;
+	font-weight: normal;
+}
+a.submenu3:hover {
+	color: #FF0000;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 100%;
+	font-weight: normal;
+}
+
+a.submenu4:link {
+	text-decoration: none;
+	color: #FF0000;
+    font-family: Verdana ,Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+
+}
+a.submenu4:visited {
+	color: #FF0000;
+	text-decoration: none;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+}
+a.submenu4:hover {
+	color: #FFFFFF;
+	text-decoration: none;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+}
+
+.verdana10 {
+	color: #626262;
+	text-decoration: none;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: normal;
+}
+
+#jdl-artikel { font-family: arial; font-size: 100%; font-weight: bold; color: #ff4202;}
+
+#jdl-layanan { font-family: arial; font-size: 100%; font-weight: bold; color: #4e80bb;}
+
+#jdl-press { font-family: arial; font-size: 100%; font-weight: bold; color: #000000;}
+
+#jdl-program { font-family: verdana, arial, helvetica; font-size: 100%; font-weight: bold; color: #ff4202; letter-spacing : -1px; }
+
+#jdl-subhead { font-family: verdana, arial; font-size: 85%; font-weight: normal; color: #CCCCCCC; letter-spacing : -1px; height:20px}
+
+#font-normal { font-family: verdana, arial; font-size: 100%; font-weight: normal; color: #000000; }
+
+#font-artikel { font-family: arial; font-size: 100%; font-weight: normal; color: #000000; border-bottom: solid #D4D4D4 1px;	}
+
+#dot-line1 { border-bottom: 1px dotted #cccccc; letter-spacing : 1px; }
+
+#dot-line { border-bottom: 2px dotted #cccccc }
+
+
+
+.input { border: 1px solid #CCCCCC; font-weight: normal ; font: 10px Verdana, Arial; }
+
+.button { border: 1px solid #999999; font: 10px Verdana, Arial;	font-weight: bold; color: #666666;}
+
+.list { font: 10px Verdana, Arial; font-weight: bold; color: #3469AB }
+.list2 { font: 10px Verdana, Arial; font-weight: normal;  }
+
+#footer { font-family: verdana; font-size: 90%; color: #000000; font-weight: normal; }
+
+.box-berita { width: 200px; padding-bottom: 10px; background-color: #f8f9fc; float: center; }
+
+.box-isi-berita { margin-left: 10px; margin-right: 10px; background-color: #edebed; padding: 10px; }
+
+.box-login { width: 140px; padding-top: 10px; padding-bottom: 10px; background-color: #f8f9fc; float: center; border-top: solid #D20000 2px; }
+
+.box-isi-login { margin-left: 10px; margin-right: 10px; background-color: #edebed; padding: 10px; }
+
+.box-isi-prg { margin-left: 10px; margin-right: 10px; font: 10px Verdana, Arial; font-weight: normal;	color: #666633; background-color: #edebed; padding: 10px; }
+
+.box-search { width: 780px; padding-top: 5px; padding-bottom: 5px; background-color: #f8f9fc; float: center; }
+
+.box-isi-search { margin-left: 5px; margin-right: 5px; background-color: #edebed; padding: 1px; }
+
+#arsip { font-family: arial; font-size: 90%; font-weight: normal; color: #666633; padding-left: 10px; }
+
+.box-isi-grup { margin-left: 5px; margin-right: 5px; background-color: #edebed; padding: 1px; }
+
+.box-content-berita { width: 420px; padding-bottom: 10px; padding-left:4px ; float: center; }
+
+.box-content-isiberita { margin-left: 2px; margin-right: 2px; font-family: arial; font-size: 110%; padding: 10px; padding-top: 0px; float: center;}
+
+.box-lain { width: 140px; padding-top: 5px; padding-bottom: 5px; background-color: #f8f9fc; float: center;  }
+
+.box-isi-lain { margin-left: 5px; margin-right: 5px; background-color: #edebed; padding: 8px; }
+
+#jdl-arsipnews { font-family: arial; font-size: 110%; font-weight: bold; color: #000000; border-top: solid #D20000 2px;  border-left: solid #CCCCCC 1px; border-right: solid #CCCCCC 1px; margin-left: 5px;  margin-right: 5px;	 background: #E0E0E0;  height: 20px;  padding-left: 10px;  }
+
+.box-isi-arsipnews { margin-left: 2px;  margin-right: 2px;  padding: 8px; }
+
+#search { font-family: arial; font-size: 100%; font-weight: bold; color: #000000; padding-left: 10px; }
+
+
+.box-dir
+{
+	position: relative;
+	width: 300px;
+	font-family: arial;
+	color: black;
+	background: #e0e0e0;
+	padding: 5px;
+	border-top: 3px solid #a33;
+	margin-left: 8px;
+}
+
+.box-bankdata
+{
+	position: relative;
+	width: 600px;
+	font-family: arial;
+	color: black;
+	background: #f8f9fc;
+	padding: 5px;
+	border-top: 1px solid #a33;
+	margin-left: 8px;
+}
+
+
+.tabEnable
+{
+	float: left;
+	padding: 4px 5px;
+	margin-right: 2px;
+	border: 1px solid #9ab;
+	border-bottom: 1px solid #fff;
+	background: #fff;
+	z-index: 99;
+}
+.tabDisable
+{
+	float: left;
+	padding: 4px 5px;
+	margin-right: 2px;
+	border: 1px solid #9ab;
+	border-bottom: 1px solid #9ab;
+	background: #cde;
+	z-index: 99;
+}
+
+.tabcontent
+{
+	position: relative;
+	padding: 5px;
+	margin: 24px 0 0 0;
+	border: 1px solid #9ab;
+	background: #fff;
+	line-height: 1.4em;
+	width: 100%;
+	top: 28px;
+
+}
+html>body .tabcontent
+{
+	width: auto;
+}
+.tabmenu
+{
+	position: absolute;
+	margin: 0 0 0 10px;
+	z-index: 99;
+}
+.layanan_informasi:link,
+.layanan_informasi:visited {
+	background-color: #d6ebfc;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.layanan_informasi:hover {
+	cursor: pointer;
+	background-color: #d6ebfc;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.list_bgbebas ul
+{
+	margin: 0;
+	padding: 0;
+}
+.list_bgbebas li
+{
+	list-style: none;
+	background:  url(../imgs/bullet.gif) 1px 4px no-repeat;
+	padding-left: 11px;
+}
+.list_bgbebas li span
+{
+	font-weight: normal;
+    color: #4e80bb; 
+}
+.list_bgbebas li a
+{
+	display: block;
+	padding: 1px 2px;
+	color: #4e80bb;
+}

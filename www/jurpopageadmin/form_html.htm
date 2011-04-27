@@ -1,0 +1,122 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link href="../library/style.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+<!--
+.style1 {color: #000000}
+-->
+</style>
+</head>
+
+<body>
+<form action="{thisfile}" method="post" enctype="multipart/form-data" name="frm" id="form">
+  <table width="100%"  border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+      <td width="1" background="../library/images/grs_vert.gif"></td>
+      <td height="24" bgcolor="#666666" class="font12"> <p><font color="#FFFFFF"><span class="Font10BoldWhite"><strong>&nbsp;WebPage</strong> 
+          &raquo; <strong>{webpg_title}</strong></span></font></p>
+        </td>
+      <td width="30" align="right" bgcolor="#666666" class="Font10BoldWhite"><a href="index.php">[x]</a></td>
+      <td width="1" background="../library/images/grs_vert.gif"></td>
+    </tr>
+    <tr>
+      <td width="1" background="../library/images/grs_vert.gif"></td>
+      <td colspan="2" align="center"><br>
+          <table width="100%"  border="0" cellpadding="3" cellspacing="1">
+          <tr align="left"> 
+            <td colspan="2" nowrap class="Font8Boldv">Webpage Title<br>
+              <input name="webpg_title" type="text" class="inpText" id="webpg_title" value="{webpg_title}" size="100%"></td>
+          </tr>
+          <tr align="left"> 
+            <td width="17%" valign="top" nowrap class="Font8Boldv">Webpage Content</td>
+            <td width="83%">&nbsp; 
+              <!-- tinyMCE -->
+              <!--script type="text/javascript" src="./jscripts/tiny_mce/tiny_mce_gzip.js"></script>
+<script type="text/javascript">
+tinyMCE_GZ.init({
+	plugins : 'emotions,print',
+	themes : 'advanced',
+	languages : 'en',
+	disk_cache : true,
+	debug : false
+});
+</script-->
+              <script type="text/javascript" src="./jscripts/tiny_mce/tiny_mce.js"></script> 
+              <script language="javascript" type="text/javascript">
+tinyMCE.init({
+	plugins : 'emotions,print',
+	mode : "textareas",
+	theme : "advanced",
+		elements : "elm1", /*bagaz*/
+	theme_advanced_buttons1 : "bold,italic,underline,separator,strikethrough,justifyleft,justifycenter,justifyright, justifyfull,bullist,numlist,undo,redo,link,unlink, separator,image, separator, emotions,|,print,|,code",
+	theme_advanced_buttons2 : "forecolor,|,formatselect,fontselect,fontsizeselect,|,hr,|,removeformat",
+	theme_advanced_buttons3 : "",
+	languages : 'en',
+	dialog_type : 'modal',
+	theme_advanced_toolbar_location : "top",
+	theme_advanced_toolbar_align : "left",
+	theme_advanced_statusbar_location : "bottom",
+	extended_valid_elements : "a[name|href|target|title|onclick],img[class|src|border=0|alt|title|hspace|vspace|width|height|align|onmouseover|onmouseout|name],hr[class|width|size|noshade],font[face|size|color|style],span[class|align|style]", 
+	//execcommand_callback : "myCustomExecCommandHandler",
+	debug : false /*bagaz*/
+});
+
+	// Custom event handler
+	function myCustomExecCommandHandler(editor_id, elm, command, user_interface, value) {
+		var linkElm, imageElm, inst;
+
+		switch (command) {
+			case "mceLink":
+				inst = tinyMCE.getInstanceById(editor_id);
+				linkElm = tinyMCE.getParentElement(inst.selection.getFocusElement(), "a");
+
+				if (linkElm)
+					alert("Link dialog has been overriden. Found link href: " + tinyMCE.getAttrib(linkElm, "href"));
+				else
+					alert("Link dialog has been overriden.");
+
+				return true;
+		}
+
+		return false; // Pass to next handler in chain
+	}
+
+	// Custom save callback, gets called when the contents is to be submitted
+	function customSave(id, content) {
+		//alert(id + "=" + content); //tes content
+	}
+</script> 
+              <!-- /tinyMCE -->
+            </td>
+          </tr>
+          <tr align="left"> 
+            <td colspan="2" nowrap class="Font8Boldv">{webpg_content}&nbsp; </td>
+          </tr>
+          <tr align="left"> 
+            <td nowrap class="Font8Boldv">&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr align="center"> 
+            <td colspan="2"><input name="id" type="hidden" id="id" value="{id}"> 
+              <input name="action" type="hidden" id="action3" value="f_html"> 
+              <input name="coded" type="hidden" id="coded2" value="{coded}"> 
+              <!input name="Submit" type="submit" class="inpButton" value="Simpan" onclick="tinyMCE.triggerSave();">
+              <input name="Submit" type="submit" class="inpButton" value="Save"> 
+            </td>
+          </tr>
+        </table></td>
+      <td width="1" background="../library/images/grs_vert.gif"></td>
+    </tr>
+    <tr>
+      <td width="1" background="../library/images/grs_vert.gif"></td>
+      <td height="1" colspan="2" background="../library/images/grs_hors.gif"></td>
+      <td width="1" background="../library/images/grs_vert.gif"></td>
+    </tr>
+  </table>
+</form>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link href="../library/style.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+<!--
+.style1 {color: #000000}
+-->
+</style>
+</head>
+
+<body>
+<table width="100%"  border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="1" background="../library/images/grs_vert.gif"></td>
+    <td height="24" bgcolor="#666666" class="font12"><font color="#FFFFFF"><strong class="font12"><span class="Font10BoldWhite">&nbsp;{category_title}</span></strong></font></td>
+    <td align="right" bgcolor="#666666" class="Font10BoldWhite"><a href="index.php"><img src="../library/images/cross.gif" width="18" height="16" border="0" align="absmiddle"></a></td>
+    <td width="1" background="../library/images/grs_vert.gif"></td>
+  </tr>
+  <tr>
+    <td width="1" background="../library/images/grs_vert.gif"></td>
+    <td colspan="2" align="center">
+      <table width="100%"  border="0" cellpadding="3" cellspacing="1" bgcolor="#333333">
+        <tr> 
+          <td width="35" align="center" bgcolor="#9999FF"><strong>No.</strong></td>
+          <td align="left" bgcolor="#9999FF"><strong><span class="Font8Boldv">Data</span></strong><strong><span class="Font8Boldv"></span></strong></td>
+          <td width="50" align="center" bgcolor="#9999FF" class="Font8Boldv"><a href="content_note_add.php?page_id={page_id}&category={category_id}" class="Font8Boldv"><font color="#000000"><img src="../library/images/new.gif" width="16" height="19" border="0" align="absmiddle"></font></a></td>
+        </tr>
+        <!#blok#!>
+        <tr> 
+          <td align="center" bgcolor="#FFFFFF" class="Font8v">{no}</td>
+          <td align="left" bgcolor="#FFFFFF" class="Font8v">{note_title} 
+            <br>
+            {note_date} / Reader:{note_reader}<br>
+            <img src="{note_images}" border="0" align="absmiddle">{note_text} </td>
+          <td align="center" nowrap bgcolor="#FFFFFF"><a href="content_note_edit.php?page_id={page_id}&category={category_id}&note_id={note_id}&"><img src="../library/images/edit.gif" width="18" height="18" border="0" align="absmiddle"></a> 
+            <a href="content_note_delete.php?page_id={page_id}&category={category_id}&note_id={note_id}&" onClick="return confirm('Delete item ?')"><img src="../library/images/delete.gif" width="18" height="18" border="0" align="absmiddle"></a></td>
+        </tr>
+        <!#/blok#!>
+      </table>
+      <br>
+    {page_view}</td>
+    <td width="1" background="../library/images/grs_vert.gif"></td>
+  </tr>
+  <tr>
+    <td width="1" background="../library/images/grs_vert.gif"></td>
+    <td height="1" colspan="2" background="../library/images/grs_hors.gif"></td>
+    <td width="1" background="../library/images/grs_vert.gif"></td>
+  </tr>
+</table>
+<br>
+</body>
+</html>

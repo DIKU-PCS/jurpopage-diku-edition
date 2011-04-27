@@ -1,0 +1,22 @@
+<html>
+<head>
+	<link rel="stylesheet" href="style.css" type="text/css" media="all">
+</head>
+<body>
+  <div class="postbox">
+	<h3 class="headtitle2"><img src="library/images/folder.gif" width="18" height="18" align="top"> {active_category_title}</h3>
+	<h2> {active_note_title}</h2>
+	<p><em>{active_note_date}</em><br>
+      <img src="{active_note_images}" border="0" align="absmiddle">{active_note_text}&nbsp;</p>
+	<div class="clear"></div>
+  </div>
+
+	<div class="postbox">
+	<h3 class="headtitle2"><img src="library/images/calender.gif" width="18" height="18" align="top"> Index : {active_category_title}</h3>
+	<ul><!#blok#!>
+              <li>&nbsp;&nbsp;<strong><a href="{note_url}" class="lightBlue">{note_title}</a></strong></li>
+			<!#/blok#!></ul>
+	{page_view}
+	</div>
+
+</body></html>

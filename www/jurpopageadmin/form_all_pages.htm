@@ -1,0 +1,92 @@
+<html>
+<head>
+<title># Jurpopage # webpage content maintenance ....</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="../library/style.css">
+</head>
+
+<body leftmargin="0" topmargin="1" onLoad="{onload}">
+<table width="728" height="100%" align="center" cellpadding="0" cellspacing="0" class="bgtop">
+  <tr valign="bottom" > 
+    <td colspan="2" class="mainmenu"> <table width="100%"  border="0" cellpadding="0" cellspacing="0" style="background-repeat:no-repeat">
+        <tr> 
+          <td height="24" bgcolor="#0099CC">&nbsp;&nbsp;<a href="index.php" class="menu">Home</a> 
+            <span class="menu">::</span> <a href="facedesign.php" class="menu">Face 
+            Design</a> <span class="menu">::</span> <a href="user_member_list.php" class="menu">Member</a> 
+            <span class="menu">::</span> <a href="change_password.php" class="menu">Change 
+            Password</a> </td>
+          <td width="88" height="20" align="right" bgcolor="#0099CC"><a href="{location_login}" onClick="{condition_login}"><font color="#FFFFFF">{text_login}</font></a>&nbsp;&nbsp;&nbsp;</td>
+        </tr>
+        <tr align="left" valign="middle" bgcolor="#999999"> 
+          <td height="35" colspan="2">&nbsp;&nbsp;Configuration -&gt; <a href="jurpopage_static.php" class="menu">Static 
+            Pages</a> <span class="menu">::</span> <a href="jurpopage_dynamic.php" class="menu">Dynamic 
+            Pages</a> </td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr valign="bottom" > 
+    <td height="20" colspan="2" align="center" valign="middle"><font color="#FF0000"><b>{msg}</b></font>&nbsp;</td>
+  </tr>
+  <tr valign="top"> 
+    <td colspan="2" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td width="220" valign="top"> <table width="100%" border="0" cellspacing="1" cellpadding="0">
+              <tr> 
+                <td height="25" bgcolor="#0099FF"><font color="#FFFF00">&nbsp;<strong>Modify 
+                  webcontent from here</strong></font></td>
+                <td width="10">&nbsp;</td>
+              </tr>
+            </table>
+            <br>
+            <table width="100%" border="0" cellspacing="1" cellpadding="0">
+              <tr> 
+                <td height="25" bgcolor="#999999">&nbsp;<strong>Dynamic Page </strong></td>
+                <td width="10">&nbsp;</td>
+              </tr>
+            </table>
+            <table width="100%" border="0" cellspacing="1" cellpadding="0">
+              <!#blok_page#!>
+              <tr> 
+                <td height="25" bgcolor="#CCCCCC"><strong>&nbsp;{page_title}</strong></td>
+                <td height="25">&nbsp;</td>
+              </tr>
+              <!#blok_category#!>
+              <tr> 
+                <td height="20">&nbsp;&raquo; <a href="{category_url}">{category_title}</a></td>
+                <td width="10">&nbsp;</td>
+              </tr>
+              <!#/blok_category#!>
+              <!#/blok_page#!>
+            </table>
+            &nbsp; <br>
+            <table width="100%" border="0" cellspacing="1" cellpadding="0">
+              <tr> 
+                <td height="25" bgcolor="#999999">&nbsp;<strong>Static Page</strong></td>
+                <td width="10">&nbsp;</td>
+              </tr>
+            </table>
+            <table width="100%" border="0" cellspacing="1" cellpadding="0">
+              <!#blok_webpg#!>
+              <tr> 
+                <td height="20"><a href="{webpg_url}">&nbsp;{webpg_title}</a></td>
+                <td width="10">&nbsp;</td>
+              </tr>
+              <!#/blok_webpg#!>
+            </table>
+            &nbsp; </td>
+          <td valign="top">{web_content}&nbsp;</td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr valign="bottom" > 
+    <td height="20" colspan="2" align="right" valign="middle">&nbsp;</td>
+  </tr>
+  <tr align="center" > 
+    <td height="45" colspan="2" align="left" valign="top" bgcolor="#0099CC" class="mainmenu"> 
+      &nbsp;<br>
+      &nbsp; Thank's for using <a href="http://jurpo.com" target="_blank">Jurpopage</a> 
+      Version 0.1.1</td>
+  </tr>
+</table>
+</body>
+</html>

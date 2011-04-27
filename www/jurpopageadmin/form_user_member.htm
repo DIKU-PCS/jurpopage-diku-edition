@@ -1,0 +1,63 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link href="../library/style.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+<!--
+.style1 {color: #000000}
+-->
+</style>
+</head>
+
+<body>
+<form name="form1" method="post" action="{thisfile}">
+  <table width="50%"  border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr> 
+      <td width="1" background="../images/grs_vert.gif"></td>
+      <td height="24" align="center" background="../images/_bg_head1.gif" class="font12"><hr>
+        <div align="center"><font color="#000000"><span class="Font10BoldWhite"><strong>Member 
+          User </strong></span></font></div>
+        <hr></td>
+      <td width="1" background="../images/grs_vert.gif"></td>
+    </tr>
+    <tr> 
+      <td width="1" background="../images/grs_vert.gif"></td>
+      <td align="center"><br> <table width="100%"  border="0" cellpadding="3" cellspacing="1">
+          <tr align="left"> 
+            <td nowrap class="Font8Boldv">User ID </td>
+            <td><input name="user_id" type="text" class="inpText" id="user_id" value="{user_id}"></td>
+          </tr>
+          <tr align="left"> 
+            <td nowrap class="Font8Boldv">User Name </td>
+            <td><input name="user_name" type="text" class="inpText" id="user_name" value="{user_name}"></td>
+          </tr>
+          <tr align="left"> 
+            <td nowrap class="Font8Boldv">E-Mail</td>
+            <td><input name="user_email" type="text" class="inpText" id="user_email" value="{user_email}"></td>
+          </tr>
+          <tr align="left"> 
+            <td nowrap class="Font8Boldv">Reset Password</td>
+            <td><input name="reset_password" type="checkbox" class="inpText" id="reset_password" value="true"></td>
+          </tr>
+          <tr> 
+            <td width="24%"><input name="old_user_id" type="hidden" id="old_user_id" value="{user_id}"> 
+              <input name="default_password" type="hidden" id="default_password2" value="{user_default_password}"> 
+              <input name="coded" type="hidden" id="coded2" value="{coded}"> <input name="action" type="hidden" id="action" value="true"></td>
+            <td><input name="Submit" type="submit" class="inpButton" value="Save"> 
+              <input name="Submit2" type="button" class="inpButton" value="Back" onClick="window.location.replace('user_member_list.php?coded={coded}')"></td>
+          </tr>
+        </table></td>
+      <td width="1" background="../images/grs_vert.gif"></td>
+    </tr>
+    <tr> 
+      <td width="1" background="../images/grs_vert.gif"></td>
+      <td height="1" background="../images/grs_hors.gif"></td>
+      <td width="1" background="../images/grs_vert.gif"></td>
+    </tr>
+  </table>
+</form>
+</body>
+</html>

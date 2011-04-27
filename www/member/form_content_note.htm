@@ -1,0 +1,167 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link href="../library/style.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+<!--
+.style1 {color: #000000}
+-->
+</style>
+</head>
+
+<body>
+<form action="{thisfile}" method="post" enctype="multipart/form-data" name="frmJurpoNote" id="frmJurpoNote">
+  <table width="50%"  border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+      <td width="1" background="../library/images/grs_vert.gif"></td>
+      <td height="24" bgcolor="#666666" class="font12"><font color="#FFFFFF"><span class="Font10BoldWhite">&nbsp;<strong>Note</strong></span></font></td>
+      <td align="right" bgcolor="#666666" class="Font10BoldWhite"><a href="index.php"><img src="../library/images/cross.gif" width="18" height="16" border="0" align="absmiddle"></a></td>
+      <td width="1" background="../library/images/grs_vert.gif"></td>
+    </tr>
+    <tr>
+      <td width="1" background="../library/images/grs_vert.gif"></td>
+      <td colspan="2" align="center"><br>
+          <table width="100%"  border="0" cellpadding="3" cellspacing="1">
+            <tr align="left">
+              
+            <td nowrap class="Font8Boldv">Title</td>
+              <td><input name="note_title" type="text" class="inpText" id="note_title" value="{note_title}"></td>
+            </tr>
+            <tr align="left">
+              
+            <td valign="top" nowrap class="Font8Boldv">Image</td>
+              <td><img src="{note_images}" border="0" align="absmiddle"><br>
+                  <!#blok_edit#!>
+                  <span class="Font8v">
+                  <input name="hapus_gambar" type="checkbox" class="inpText" id="hapus_gambar" value="true">
+              Delete image</span> <br>
+    <!#/blok_edit#!>
+    <input name="gambar" type="file" class="inpText" id="gambar"></td>
+            </tr>
+            <tr align="left">
+              
+            <td valign="top" nowrap class="Font8Boldv">Content 
+              <script type="text/javascript">
+						<!--
+							function insert_text(open, close)
+							{
+								msgfield = (document.all) ? document.all.req_message : document.forms['frmJurpoNote']['note_text'];
+
+								// IE support
+								if (document.selection && document.selection.createRange)
+								{
+									msgfield.focus();
+									sel = document.selection.createRange();
+									sel.text = open + sel.text + close;
+									msgfield.focus();
+								}
+
+								// Moz support
+								else if (msgfield.selectionStart || msgfield.selectionStart == '0')
+								{
+									var startPos = msgfield.selectionStart;
+									var endPos = msgfield.selectionEnd;
+
+									msgfield.value = msgfield.value.substring(0, startPos) + open + msgfield.value.substring(startPos, endPos) + close + msgfield.value.substring(endPos, msgfield.value.length);
+									msgfield.selectionStart = msgfield.selectionEnd = endPos + open.length + close.length;
+									msgfield.focus();
+								}
+
+								// Fallback support for other browsers
+								else
+								{
+									msgfield.value += open + close;
+									msgfield.focus();
+								}
+
+								return;
+							}
+						-->
+						</script></td>
+              <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td>
+						<div style="padding-top: 4px;">
+							<input value=" b " name="B" onclick="insert_text('[b]','[/b]')" type="button"> 
+							<input value=" i " name="I" onclick="insert_text('[i]','[/i]')" type="button">
+							<input value=" u " name="U" onclick="insert_text('[u]','[/u]')" type="button">
+                                                        <input value=" hide " name="Hide" onclick="insert_text('[hide=10]','[/hide]')" type="button">
+							<input value="[url=www] name [/url]" name="Url" onclick="insert_text('[url]','[/url]')" type="button">
+							<input value="img" name="Img" onclick="insert_text('[img]','[/img]')" type="button">
+							<input value="code" name="Code" onclick="insert_text('[code]','[/code]')" type="button">
+							<input value="quote" name="Quote" onclick="insert_text('[quote]','[/quote]')" type="button">
+							<input value="youtube" name="Youtube" onclick="insert_text('[youtube]','[/youtube]')" type="button">
+							<input value="google video" name="Googlevid" onclick="insert_text('[googlevid]','[/googlevid]')" type="button">
+						</div>
+						
+                    <div style="padding-top: 4px;"> <a href="javascript:insert_text(' :)', '');"><img src="../library/smilies/smile.png" alt=":)" border="0"></a> 
+                      <a href="javascript:insert_text(' :confused:', '');"><img src="../library/smilies/confused.gif" alt=":confused:" border="0"></a> 
+                      <a href="javascript:insert_text(' :(', '');"><img src="../library/smilies/sad.gif" alt=":(" border="0"></a> 
+                      <a href="javascript:insert_text(' :D', '');"><img src="../library/smilies/big_smile.png" alt=":D" border="0"></a> 
+                      <a href="javascript:insert_text(' :wow:', '');"><img src="../library/smilies/wow.gif" alt=":wow:" border="0"></a> 
+                      <a href="javascript:insert_text(' ;)', '');"><img src="../library/smilies/wink.gif" alt=";)" border="0"></a> 
+                      <a href="javascript:insert_text(' :top:', '');"><img src="../library/smilies/top.gif" alt=":top:" border="0"></a> 
+                      <a href="javascript:insert_text(' :p', '');"><img src="../library/smilies/tongue.gif" alt=":p" border="0"></a> 
+                      <a href="javascript:insert_text(' :cry:', '');"><img src="../library/smilies/cry.gif" alt=":cry:" border="0"></a> 
+                      <a href="javascript:insert_text(' :mad:', '');"><img src="../library/smilies/mad.png" alt=":mad:" border="0"></a> 
+                      <a href="javascript:insert_text(' :rolleyes:', '');"><img src="../library/smilies/rolleyes.gif" alt=":rolleyes:" border="0"></a> 
+                      <a href="javascript:insert_text(' :cool:', '');"><img src="../library/smilies/cool.png" alt=":cool:" border="0"></a> 
+                      <a href="javascript:insert_text(' :grin:', '');"><img src="../library/smilies/grin.gif" alt=":grin:" border="0"></a> 
+                      <a href="javascript:insert_text(' :thanks:', '');"><img src="../library/smilies/thanks.gif" alt=":thanks:" border="0"></a> 
+                      <a href="javascript:insert_text(' :help:', '');"><img src="../library/smilies/help.gif" alt=":help:" border="0"></a> 
+                      <a href="javascript:insert_text(' :sorry:', '');"><img src="../library/smilies/sorry.gif" alt=":sorry:" border="0"></a> 
+                    </div>
+				  &nbsp;</td>
+                </tr>
+              </table>
+              <textarea name="note_text" cols="40" rows="6" class="inpText" id="note_text">{note_text}</textarea></td>
+            </tr>
+            <tr align="left">
+              
+            <td nowrap class="Font8Boldv">Crop Description</td>
+              
+            <td class="Font8v"><input name="note_pangkas" type="radio" class="inpText" value="0" {checked_pangkas_0}>
+              No<br>
+              <input name="note_pangkas" type="radio" class="inpText" value="1" {checked_pangkas_1}>
+              Yes</td>
+            </tr>
+            <tr align="left">
+              
+            <td nowrap class="Font8Boldv">Reader</td>
+              <td class="Font8v"><input name="note_user" type="radio" class="inpText" value="0" {checked_pembaca_0}>
+              Public<br>
+              <input name="note_user" type="radio" class="inpText" value="1" {checked_pembaca_1}>
+              Member</td>
+            </tr>
+            <tr align="left">
+              <td nowrap class="Font8Boldv">Hot News </td>
+              <td><input name="note_special" type="checkbox" class="inpText" id="note_special" value="true" {checked_special}></td>
+            </tr>
+            <tr align="left">
+              
+            <td nowrap class="Font8Boldv">Reset Date</td>
+              <td><input name="reset_tanggal" type="checkbox" class="inpText" id="reset_tanggal" value="true"></td>
+            </tr>
+            <tr>
+              <td width="24%"><input name="note_id" type="hidden" id="note_id" value="{note_id}">
+                <input name="action" type="hidden" id="action3" value="true">
+                <input name="category_id" type="hidden" id="category_id" value="{category}">
+              <input name="page_id" type="hidden" id="page_id" value="{page_id}"></td>
+              <td><input name="Submit" type="submit" class="inpButton" value="Save">
+            </td>
+            </tr>
+        </table></td>
+      <td width="1" background="../library/images/grs_vert.gif"></td>
+    </tr>
+    <tr>
+      <td width="1" background="../library/images/grs_vert.gif"></td>
+      <td height="1" colspan="2" background="../library/images/grs_hors.gif"></td>
+      <td width="1" background="../library/images/grs_vert.gif"></td>
+    </tr>
+  </table>
+</form>
+</body>
+</html>

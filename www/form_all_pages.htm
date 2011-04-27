@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr"><head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="robots" content="all">
+	<title>{website_name} {active_page_title}</title>
+
+	<link rel="stylesheet" href="style.css" type="text/css" media="all">
+	<link rel="alternate" type="application/rss+xml" title="{website_name} RSS 2.0" href="{website_url}/feed-rss2.php" />
+</head>
+
+<body onload="{onload}">
+<div id="page">
+
+<div id="header">
+	<div id="headerleft">
+		<h1><a href="{website_url}">{website_name}</a></h1>
+		<p class="description">{website_description}</p>	
+	</div>
+	<div id="headerright">&nbsp;
+	</div>
+</div>
+
+<div id="navbar">
+	<div id="navbarleft">
+		<ul id="nav">
+			<!#blok_menumainpages#!><li><a href="{menumainpage_url}" title="{menumainpage_title}">{menumainpage_title}</a></li><!#/blok_menumainpages#!>
+		</ul>
+	</div>
+	<div id="navbarright">	
+	</div>
+</div>
+
+<div id="content-wrapper">
+<div id="content"> 
+{web_content}
+</div>
+
+  <div id="sidebar-wrapper">
+		
+      <div class="sidebartop"> <strong>Member Area</strong> : <a href="login.php">Login</a> 
+        | <a href="register.php">Register</a> </div>
+	<div id="sidebar1">
+	  <ul>
+		<!#blok_menupages#!>
+		<li class="widget">
+		<h3><a href="{menupage_url}">{menupage_title}</a></h3>
+			<ul>
+				<!#blok_category#!><li class="cat-item cat-item-6"><a href="{menucategory_url}" title="View all posts filed under {menucategory_title}">{menucategory_title}</a></li><!#/blok_category#!>
+			</ul>
+		</li>
+		<!#/blok_menupages#!>
+	  </ul>
+	</div>
+
+	<div id="sidebar2">
+	  <ul>
+			<li class="widget">
+		    <h3>Recent Posts</h3>
+			<ul>
+				<!#blok_recentposts#!><li><a href="{recent_url}">{recent_title}</a></li><!#/blok_recentposts#!>
+			</ul>
+			</li>
+		  </ul>
+	
+	</div>
+
+  </div>
+
+<div class="clear"></div>  <div id="footer"> Copyright © 2008 <a href="{website_url}">{website_name}</a> 
+      <br />
+      Powered by <a href="http://jurpo.com" target="_blank">Jurpopage</a> Project, 
+      LightGray Theme by <a href="http://kabarku.com" target="_blank">kabarku</a> </div>
+
+</div>
+</div><!--/page -->
+
+</body>
+</html>
