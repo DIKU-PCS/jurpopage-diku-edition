@@ -58,8 +58,13 @@ CREATE TABLE IF NOT EXISTS `master_user` (
 -- 
 
 INSERT INTO `master_user` (`master_user_id`, `user_id`, `user_email`, `user_name`, `user_password`, `user_level`) VALUES 
-(1, 'admin', '', 'admin - The Jurpopage Administrator', 'c4ca4238a0b923820dcc509a6f75849b', 9),
-(2, 'a', 'a@a.com', 'a ', 'c4ca4238a0b923820dcc509a6f75849b', 1);
+(1, 'admin', '', 'admin - The Jurpopage Administrator', '8621ffdbc5698829397d97767ac13db3', 9),
+(2, 'a', 'a@a.com', 'a ', 'c4ca4238a0b923820dcc509a6f75849b', 1),
+(3, 'kfl', 'kflarsen@diku.ddr', 'Strong Bad', '0ac9b6f20e75520ac3f0a4d6df6649d0', 1),
+(4, 'sost', 'sost@diku.ddr', 'Strong Smell', 'c9bb780f071e7b198f26ab12e0914bff', 1),
+(5, 'moki', 'moki@diku.ddr', 'Strong Foot', '04d808a8a1e7723064842e6ee5277fe3', 1),
+(6, 'reenberg', 'reenberg@diku.ddr', 'Mister T', 'e0639742e0aa22c3dc106f321021f3f4', 1),
+(7, 'mortenbp', 'mortenbp@diku.ddr', 'Cirkus Autist', '6d5351265fe00ff82b196958c8aff219', 1);
 
 -- --------------------------------------------------------
 
